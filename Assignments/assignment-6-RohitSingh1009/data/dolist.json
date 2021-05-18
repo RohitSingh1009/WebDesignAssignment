@@ -1,0 +1,6 @@
+[
+    {"listname" :"Hit the gym","listdescription":"This time is allocated to hit the gym" ,"listduedate":"03/02/2021","listTime":"1:10 AM", "position": 1},
+    {"listname" :"Read the book","listdescription":"This time is allocated to Read the book","listduedate":"01/02/2021","listTime":"2:10 AM", "position": 2},
+    {"listname" :"Complete Assignment","listdescription":"This time is allocated to Complete Assignment","listduedate":"02/02/2021","listTime":"3:10 AM", "position": 3},
+    {"listname" :"Meet a Friend","listdescription":"This time is allocated to Meet a Friend", "listduedate":"02/02/2021","listTime":"4:10 AM","position":4}
+] 

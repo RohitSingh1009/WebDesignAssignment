@@ -1,0 +1,17 @@
+
+$h1: 30px;
+$h2: 28px;
+$h3: 24px;
+$h4: 18px;
+
+/*! List of headings*/
+$headings: ( h1: $h1, h2: $h2, h3: $h3, h4:$h4);
+/*! @each ( $heading : $size )*/
+@each $heading, $size in $headings {
+    #{$heading} {
+        margin: 10px 0;
+        line-height: 1.5em;
+        font-size: $size;
+    }
+}
+

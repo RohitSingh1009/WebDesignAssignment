@@ -1,0 +1,104 @@
+.cleaningservicecontainer{
+    @include alternatecontainercolor;
+    height: 400px;
+    margin-bottom: 70px;
+}
+.cleaningserviceimagegrid{
+    @include grid;
+    width:50%;
+    padding:0.2em;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 40px;
+    p{
+        font-size: fontsize(x-small);
+        color:$secondary-color;
+    }
+    b{
+        font-size:fontsize(small);
+        color:$primary-color
+    }
+}
+/*! Mixins has been used here */
+.moreservicebutton{
+    margin: auto;
+    text-align: center;
+    button{
+        @include button1
+    } 
+}
+/*! Math operator used in this part of the scss */
+.bigimagegrid{
+    display: grid;
+    width:100%-20%;
+    grid-template-columns: 10*5% 50%;
+    /* border: 1px solid gray; */
+    margin-bottom: 40px;
+    .imagesidecontent{
+        margin-left: 20px;
+    }
+    p{
+        color:$secondary-color;  
+    }
+    .aboutcaption{
+    text-align: left;
+        h2{
+            @include h2caption;
+            text-align: left;
+        }
+   }
+}
+i{
+    color:$secondary-color;
+    font-weight:weight(bolder) ;
+}
+.imagesidecontentgrid{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    /* border: 1px solid gray; */
+    grid-row-gap:20px ;
+    grid-column-gap:20px;
+    .imagesidecontentdata {
+        b{
+        color:$primary-color;
+        margin-bottom: 10px;
+        }
+        span{
+        font-size: fontsize(small);
+        color:$secondary-color;
+        }
+    }    
+}
+    
+.moreservicebuttongrid{
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top:50px;
+    button {
+        @include button1;
+    }
+}
+
+
+.aboutgreencontent{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color:$primary-color;
+    height: 100px+10;
+    text-align: center;
+    padding-top:55px;
+    padding-left:200px;
+    margin-bottom: 100px;
+}
+
+.buttongreen {
+   button{
+       @include button2;
+   }
+   span{
+       color:$primary-color;
+   } 
+}
+.contentgreen h3{
+    color: $tertiary-color;
+}
+

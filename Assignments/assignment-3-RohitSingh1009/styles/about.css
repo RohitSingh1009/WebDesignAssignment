@@ -1,0 +1,117 @@
+.cleaningservicecontainer{
+    background-color:#FAFAFA;
+    border: 1px solid #d3d3d3;
+    height: 400px;
+    margin-bottom: 70px;
+}
+.cleaningserviceimagegrid{
+    width:60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 0.2em;
+    margin-bottom: 40px;
+}
+
+.cleaningserviceimagegrid p{
+    font-size: x-small;
+}
+.cleaningserviceimagegrid b{
+    font-size: small;
+    color: #6dcfcc;
+
+}
+.moreservicebutton{
+    text-align: center;
+}
+/* Combinators are used here to style the elements */
+.moreservicebutton > button{
+    width:12%;
+    border-radius: 20px;
+    background-color: #6dcfcc;
+    padding :10px
+}
+.moreservicebutton > button > b{
+    color:#ffffff;
+}
+.bigimagegrid{
+    width:80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* border: 1px solid gray; */
+    margin-bottom: 40px;
+}
+.imagesidecontent{
+    margin-left: 20px;
+}
+.imagesidecontentgrid{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    /* border: 1px solid gray; */
+    grid-row-gap:30px ;
+
+}
+
+.imagesidecontentdata > b{
+    color:#6dcfcc;
+    margin-bottom: 10px;
+}
+.imagesidecontentdata > span{
+    font-size: small;
+    color:#CFCFCF
+}
+
+.bigimagegrid p{
+    color:#CFCFCF;
+}
+.moreservicebuttongrid{
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top:50px;
+   
+}
+
+/* Tag selector is used to design the page */
+
+i{
+    color:#CFCFCF;
+    font-weight: bolder;
+}
+.aboutcaption h2{
+    color:#6dcfcc;
+    font-weight: bolder;
+}
+
+.moreservicebuttongrid > button{
+    border-radius: 20px;
+    background-color: #6dcfcc;
+    padding :10px;
+    width:30%;
+    color:#FFFFFF;
+}
+
+.aboutgreencontent{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #6dcfcc;
+    height: 110px;
+    text-align: center;
+    padding-top:55px;
+    padding-left:200px;
+    margin-bottom: 100px;
+}
+
+.buttongreen > button{
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding:10px;
+    width:30%;
+ 
+}
+.contentgreen h3{
+    color: #ffffff;
+}
+
+.buttongreen span{
+    color: #6dcfcc;
+}

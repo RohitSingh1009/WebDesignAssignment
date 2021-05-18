@@ -1,0 +1,179 @@
+.meetcaption{
+    text-align: center;
+    color: #6dcfcc;
+    margin-bottom: 50px;
+    margin-top: 25px;
+
+}
+.meetgrid{
+    width:60%;
+    margin: auto auto 0px auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 33% 33% 33%;
+    /* border: 1px solid gray; */
+    padding-bottom: 5px;
+}
+.image-cropper img{
+    padding-bottom:0px
+}
+
+
+.meetgriddetail{
+    display: grid;
+    width:60%;
+    margin: 0px auto auto auto;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    padding-top:0
+}
+
+.meetgriddetail > div > ul{
+    list-style-type: none;
+    margin-top: 0px;
+    padding-inline-start: initial;
+}
+
+
+ 
+ .listmeetcolor{
+    color:#6dcfcc;
+    font-weight: bold;
+    font-size: large;
+
+}  
+.pricingtablecontainer{
+    margin-top: 30px;
+    background-color:#FAFAFA;
+    border: 1px  #d3d3d3;
+    height: 450px;
+}
+.pricingtablegrid{
+    width:60%;
+    margin: auto auto 100px auto;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 5%;
+    /* border: 1px solid gray; */
+    padding-bottom: 5px;
+}
+
+.pricingtablelist{
+    text-align: center;
+    border:1px solid #fafafabb;
+}
+
+.pricingtablelist ul{
+    list-style-type: none;
+    padding-inline-start: initial;
+}
+
+.pricingtablelist > ul  > li > b{
+    color: #6dcfcc;
+    font-size: 20px;
+    font-weight:bolder;
+}
+/* Tag is directly used for styling the page */
+hr{
+    width:60%;
+}
+
+.listclass{
+    font-size: 30px;
+    font-weight: bold;
+    color:#9A9A9A;
+    margin-bottom:0px;
+}
+.marginlist{
+    margin-bottom:25px;
+}
+
+.closelist{
+    margin-top: 15px;
+}
+
+.closelist li{
+    font-size:12px;
+    color:#CFCFCF;
+    margin-bottom:6px;
+
+}
+
+.buybutton{
+    background-color:#6dcfcc;
+    border: none;
+    color: white;
+    width: 100%;
+    height:45px;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.month-margin{
+    margin-bottom: 5px;
+}
+
+/* Pseudo class is used for designing the pricingtable lists  */
+
+.pricingtablelist:hover{
+    border:2px solid #6dcfcc;
+}
+.latestgridimages{
+    display: grid;
+    width:60%;
+    margin: auto;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 30px;
+
+}
+.latestblogcontent b{
+    font-size: 11px;
+    color:#CFCFCF;
+}
+
+.latestblogcontent span{
+    color:#6dcfcc;
+    font-weight: bolder;
+}
+.latestblogcontent p{
+    color:#CFCFCF;
+    font-size: 11px;
+}
+
+.testimonialcontainer{
+    background-color:#FAFAFA;
+    border: 1px  #d3d3d3;
+    height: 450px;
+    margin-top: 20px;
+}
+.testimonialimage{
+    text-align: center;
+    margin-bottom:20px;
+}
+/* combinators is used for designing the testimonial section */
+
+.testimonialimage + div{
+    text-align: center;
+    font-size: 12px;
+    color:#CFCFCF;
+    font-weight: bold;
+}
+
+.foundername{
+    text-align :center;
+    background-color:#6dcfcc;
+    margin: auto;
+    width:20%
+
+}
+.foundername span{
+    font-weight: bold;
+    color:#CFCFCF
+}
+.ourprojectcontainer{
+    margin-bottom: 20px;
+}
+.testimonialcontainer{
+    margin-bottom: 100px;
+}

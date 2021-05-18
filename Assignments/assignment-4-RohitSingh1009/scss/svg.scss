@@ -1,0 +1,42 @@
+.choosecaption{
+    @include h2caption;
+}
+
+/* Simple Selectors and combinator are used to design this section */
+.svgcontainer{
+    width:50%;
+    margin: auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 33% 33% 33%;
+    padding: 0.2em;
+}
+/*!Inheritance is used here inheriting the style of svgcontainer*/
+.svgcaption{
+    @extend .svgcontainer;
+}
+
+
+.svgcaption b{
+    font-size:fontsize(large);
+    font-weight:weight(bolder);
+    color:$primary-color;
+}
+
+.svgparagraph{
+    @include grid;
+    grid-template-columns: 33% 33% 33%;
+    width:50%;
+    /* border: 1px solid gray; */
+    margin-bottom: 100px;
+
+}
+.svgparagraph p{
+    font-size: fontsize(x-small);
+    color: $secondary-color;
+
+}
+
+.centersvgtext{
+   text-align: center;
+}

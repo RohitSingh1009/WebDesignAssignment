@@ -1,0 +1,50 @@
+.choosecaption{
+    color: #6dcfcc;
+    text-align: center;
+    margin-top: 55px;
+}
+
+/* Simple Selectors and combinator are used to design this section */
+.svgcontainer{
+    width:50%;
+    margin: auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 33% 33% 33%;
+    /* border: 1px solid gray;  */
+    padding: 0.2em;
+}
+.svgcaption{
+    width:50%;
+    margin: auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 33% 33% 33%;
+    /* border: 1px solid gray;  */
+
+}
+.svgcaption b{
+    font-size:20px;
+    font-weight:bolder;
+    color:#6dcfcc
+}
+
+.svgparagraph{
+    width:55%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    /* border: 1px solid gray; */
+    margin-bottom: 100px;
+
+}
+.svgparagraph p{
+    font-size: 11px;
+    color: #CFCFCF;
+
+}
+
+.centersvgtext{
+   padding-left: 25px;
+}

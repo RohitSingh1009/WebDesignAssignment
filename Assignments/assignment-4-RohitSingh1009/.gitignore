@@ -1,0 +1,12 @@
+#Node module Dependency directory
+node_modules/
+# log files
+logs
+*.log
+CleanNow.html
+Main2.css
+Main3.css
+imageslider.html
+# dist files
+dist/
+css/about.css

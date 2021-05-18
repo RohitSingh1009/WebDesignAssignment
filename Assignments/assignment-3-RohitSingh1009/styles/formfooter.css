@@ -1,0 +1,132 @@
+.imageslidergrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    height:380px;
+    width:300px;
+    padding:40px;
+    position: absolute;
+    bottom: 100px;
+    right: 160px;
+}
+
+.form label{
+    color:#6dcfcc;
+    font-weight: bolder;
+
+}
+/*Pseudo element css used in form*/
+
+input::placeholder{
+    font-style: italic;
+    
+}
+
+textarea::placeholder{
+    font-style: italic;
+}
+
+/* Attribute selector css has been used in the form tag for all the input type */
+
+input[type=text], textarea{
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+input[type=email]{
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* box model is used to style the css  */
+input[type=phone]{
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width:100%;
+    background-color: #6dcfcc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+.imgsliderproject{
+    position: relative;
+}
+
+.footercontainer{
+    margin-bottom: 30px;
+    background-color:#FAFAFA;
+    border: 1px  #d3d3d3;
+    height: 170px;
+}
+
+.footergrid{
+    display: grid;
+    width:60%;
+    margin:auto;
+    grid-template-columns:35% 15% 22% 25% ;
+    grid-column-gap: 2%;
+}
+ 
+/* Combinators css is used for the design of footer content  */
+
+.footercaption > b{
+    color:#6dcfcc;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.footer1content > div > p {
+    font-size: 11px;
+    color:#CFCFCF
+}
+
+.footerspan{
+    font-size: 11px;
+    color:#CFCFCF
+}
+
+.footercontent2 > b{
+    font-weight:bolder;
+    font-size: 11px;
+}
+
+.footerheading b{
+    font-weight: bolder;
+    color:#8F8F8F;
+    font-size:14px;
+}
+.listfooter ul{
+    list-style-type: none;
+    padding-inline-start: initial;
+  
+}
+
+.listfooter li{
+    font-size: 11px;
+    color:#CFCFCF;
+    margin-bottom: 4px;
+}

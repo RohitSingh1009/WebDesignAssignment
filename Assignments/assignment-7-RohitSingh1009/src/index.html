@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="Main.css">
+    <title>Text Editor</title>
+    <script src="https://unpkg.com/@reactivex/rxjs@5.0.0/dist/global/Rx.js"></script>
+</head>
+<body>
+    <div class= "container">
+        <div class="menu-bar">
+            <ul>
+                <li><a class="active" href="#file">Home</a></li>
+                <li><a href="#Edit">Edit</a></li>
+                <li><a href="#View">View</a></li>
+                <li><a href="#Insert">Insert</a></li>
+                <li><a href="#Tools">Tools</a></li>
+                <li><a href="#AddOn">Add-Ons</a></li>
+                <li><a href="#Help">Help</a></li>
+            </ul>
+        </div>
+        <div class="sample-toolbar"> 
+            <button id="boldButton" title="Bold"><b>B</b></button>
+            <button id ="italicButton" title="Italic"><i>I</i></button>
+            <select id="fontsizechanger" class="fontsizeddl">
+            </select>        
+        </div>
+  <!--Making the content editable attribute true so that there will be space for editing the content-->
+        <div id="diveditorspace" class="diveditorspaceclass" contenteditable="true">
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>

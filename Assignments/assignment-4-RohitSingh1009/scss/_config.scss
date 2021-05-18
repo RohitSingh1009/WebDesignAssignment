@@ -1,0 +1,36 @@
+/*!  Variable declaration */
+$primary-color:#6dcfcc;
+$secondary-color:#CFCFCF;
+$tertiary-color:#FFFFFF;
+$alternatepagebackground-color:#f1f1f1;;
+$alternatecontbordercolor:#d3d3d3;
+$boxalternatecolor: #000000;
+$navlinkfontcolor:#808080;
+/*! Key value Map declaration*/
+$font-weights:(
+"lighter":200,
+"light":300,   
+"regular":400,
+"medium":600,
+"bold":700,
+"bolder":800
+);
+
+$font-size:(
+ "x-small" :10px,
+ "small":13px,
+ "medium":16px,
+ "large":18px,
+ "x-large":24px,
+ "xx-large":32px
+); 
+
+/*! Function are used to change the font-weights */
+    
+@function weight($weight-name){
+    @return map-get($font-weights,$weight-name);
+}
+
+@function fontsize($size-value){
+    @return map-get($font-size,$size-value);
+}

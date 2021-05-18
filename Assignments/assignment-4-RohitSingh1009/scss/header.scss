@@ -1,0 +1,78 @@
+
+.main-container {
+    width: 70%;
+    margin: auto;
+}
+/*! include is used to add the mixin grid.*/
+.banner {
+    @include grid1;
+    grid-template-columns: 50% 50%;
+    border: 1px solid $secondary-color;
+    text-align: center;
+    span{
+        font-weight: weight(lighter);
+        color:$secondary-color;
+        font-size: fontsize(large);
+    }
+    b{
+        color:$primary-color;
+        font-size: fontsize(large);
+        font-weight:weight(bolder);
+    }
+}
+
+.navheader{
+    @include grid1;
+    grid-template-columns: 40% 60%;
+    /* border: 1px solid #808080; */
+    position: sticky;
+    position: -webkit-sticky;
+    // background-color:$secondary-color;
+    top:0px;
+    z-index: 1;
+    font-weight: weight(bolder);
+    text-align: center; 
+    b{
+        color:$primary-color;
+        font-size: fontsize(x-large);
+    }
+}
+
+/*!  Nesting and mixins has been used here.*/
+.navheader-link{
+    a{
+    font-size: fontsize(small);
+    color:$navlinkfontcolor;
+    text-decoration: none;
+    padding-right: 5px;
+    }
+    & a:hover{
+        color:$primary-color;
+        border-radius: 2px;
+        transform: scale(1);
+    }
+    button{
+        @include button1; 
+    }
+    
+}
+
+.imgslider{
+    position: relative;
+}
+.imagetext{
+    position: absolute;
+    bottom: 130px;
+    left: 220px;
+    color:$tertiary-color;
+    font-weight: weight(bolder);
+}
+h1{
+    letter-spacing: normal;
+}
+
+/*! mixin has been used to add the button style*/
+.btround
+{
+  @include button2;
+}

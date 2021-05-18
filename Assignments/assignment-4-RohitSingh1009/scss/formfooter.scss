@@ -1,0 +1,136 @@
+.imageslidergrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.image{
+    position :relative;
+    img{
+        display: block; 
+    }
+}
+
+.imageoverlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(109, 207, 204, 0.5);
+    color:#FFFFFF;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        opacity: 1;
+    }
+    h4{
+        font-weight: weight(bolder);
+    }
+}
+
+
+.form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    height:380px;
+    width:300px;
+    padding:40px;
+    position: absolute;
+    top: 80px;
+    right: 250px;
+    label{
+        color: $primary-color;
+        font-weight: weight(bolder);
+    }
+}
+
+/*Pseudo element css used in form*/
+input::placeholder{
+    font-style: italic;
+    }
+textarea::placeholder{
+    font-style: italic;
+}
+
+/* Attribute selector css has been used in the form tag for all the input type */
+
+input[type=text], textarea{
+   @include input;
+    }
+ /*! Mixins has been used here and the code can be reusable */   
+input[type=email]{
+    @include input;
+}
+
+/* box model is used to style the css  */
+input[type=phone]{
+    @include input
+}
+
+input[type=submit] {
+    @include input;
+    border:none;
+    background-color: $primary-color;
+    color:$tertiary-color;
+    }
+
+.imgsliderproject{
+    position: relative;
+}
+/*! Nesting has been used here */
+.footercontainer{
+    margin-bottom: 30px;
+    @include alternatecontainercolor;
+    height: 170px;
+    .footergrid{
+        @include grid;
+        width:60%;
+        grid-template-columns:35% 15% 22% 25% ;
+        grid-column-gap: 2%;
+        text-align: left;
+    }
+}
+
+/* Combinators css is used for the design of footer content  */
+
+.footercaption {
+    b{
+        color:$primary-color;
+        font-weight: weight(bolder);
+        font-size: fontsize(large);
+    }
+}
+
+
+.footer1content > div > p {
+    font-size: fontsize(small);
+    color:$secondary-color;
+}
+
+.footerspan{
+    font-size: fontsize(small);
+    color:$secondary-color;
+}
+
+.footerheading { 
+    b{
+        font-weight:weight(bolder);
+        color:#8F8F8F;
+        font-size:fontsize(medium);
+    }
+}
+.listfooter{
+    ul{
+        list-style-type: none;
+        padding-inline-start: initial;
+      
+    }
+    li{
+        font-size: fontsize(small);
+        color:$secondary-color;
+        margin-bottom: 4px;
+    }
+}
+
+

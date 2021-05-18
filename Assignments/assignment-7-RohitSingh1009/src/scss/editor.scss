@@ -1,0 +1,70 @@
+.editor
+    {
+        border:solid 1px $Primary-color;
+        padding: 20px;
+        min-height:600px;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    float:left
+}
+
+li a{
+    display: inline-block;
+    color:$Secondary-color;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:$tertiary-color;
+}
+
+.sample-toolbar
+{
+    border:solid 1px $fourth-color;
+    background:$sample-background;
+    padding: 5px;
+    border-radius:3px;
+    margin-bottom: 100px;
+}
+
+.diveditorspaceclass{
+    margin:auto;
+    border:solid 1px $fourth-color;
+    height: 100%;
+    width:60%;
+    text-align:left; 
+    text-indent: 50px;
+    padding-top: 30px
+
+}
+
+button{
+    outline: none;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.fontsizeddl{
+    width:60px;
+    height:40px;
+}
+
+.bold {
+    @include element;
+}
+
+.italic{
+    @include element;
+
+}

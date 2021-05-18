@@ -1,0 +1,28 @@
+{
+  "name": "assignment-6-rohitsingh1009",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy-src": "copyfiles -f src/* dist",
+    "compile-css": "node-sass src/scss/Main.scss --output dist ",
+ 
+    "build-prod": "npm run copy-src && npm run compile-css",
+    "start": "npm run build-prod && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2021/assignment-6-RohitSingh1009.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2021/assignment-6-RohitSingh1009/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2021/assignment-6-RohitSingh1009#readme",
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "express": "^4.17.1",
+    "node-sass": "^5.0.0"
+  }
+}

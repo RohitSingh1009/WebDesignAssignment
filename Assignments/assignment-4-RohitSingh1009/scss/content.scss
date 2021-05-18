@@ -1,0 +1,157 @@
+.meetcaption{
+   @include h2caption;
+   margin-top: 25px;
+
+}
+.meetgrid{
+    width:60%;
+    @include grid;    
+    grid-template-columns: 33% 33% 33%;
+    padding-bottom: 5px;
+}
+
+/*! Nesting has been used here*/
+.meetgriddetail{
+    @include grid;
+    width:60%;
+    grid-template-columns: 33% 33% 33%;
+    padding-top:0;
+
+   div ul{
+        list-style-type: none;
+        padding-inline-start: initial;
+    }
+    .listmeetcolor{
+        color:$primary-color;
+        font-weight: weight(bold);
+        font-size: fontsize(large);
+    }  
+    li{
+        color:$secondary-color;
+    }
+}  
+.pricingtablecontainer{
+    margin-top: 30px;
+    background-color:$alternatepagebackground-color;
+    //border: 1px solid $alternatecontbordercolor;
+    height: 50px*9;
+}
+.pricingtablegrid{
+    width:60%;
+    @include grid;
+    margin-top: 50px;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 5%;
+    padding-bottom: 5px;
+}
+
+.pricingtablelist{
+    margin-top: 50px;
+    text-align: center;
+    //border:1px solid $alternatecontbordercolor;
+    @include alternatecontainercolor;
+    background-color: $tertiary-color;
+    ul{
+        list-style-type: none;
+        padding-inline-start: initial; 
+    }
+        b{
+            color:$primary-color;
+            font-size: fontsize(large);
+            font-weight:weight(bolder);
+        }
+    &:hover{
+        border:3px solid $primary-color;
+    }
+}
+
+hr{
+    width:60%;
+}
+
+.listclass{
+    font-size: fontsize(xx-large);
+    font-weight:weight(bolder);
+    color:$secondary-color;
+    margin-bottom:0px;
+}
+
+
+.closelist{
+    .marginlist{
+        margin-bottom:25px;
+    }
+    li{
+    font-size:fontsize(small);
+    color:$secondary-color;
+    margin-bottom:6px;
+    }
+}
+/*! Mixin buybutton have the style of buybutton */
+.buybutton{
+   @include buybutton;
+}
+.latestblogcontainer{
+    margin-top: 50px;
+}
+
+/* Pseudo class is used for designing the pricingtable lists  */
+.latestgridimages{
+    margin-top: 30px;
+    @include grid;
+    text-align: left;
+    width:60%;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 30px;
+  
+}
+
+.latestblogcontent{
+    b{
+        font-size: fontsize(small);
+        color:$secondary-color;
+    }
+    span{
+        color:$primary-color;
+        font-weight:weight(bolder);
+    }
+    p{
+        color: $secondary-color;
+        font-size:fontsize(x-small);
+    }
+}
+
+.testimonialcontainer{
+    @include alternatecontainercolor;
+    height: 450px;
+    margin-top: 20px;
+}
+.testimonialimage{
+    text-align: center;
+    margin-bottom:50px; 
+    +div{
+        text-align: center;
+        font-size: fontsize(small);
+        color:$secondary-color;
+        font-weight: weight(bold);
+    }
+    p{
+        text-align: center;
+        color:$secondary-color;
+    }
+}
+/* combinators is used for designing the testimonial section */
+.foundername{
+    text-align :center;
+    background-color:$primary-color;
+    margin: auto;
+    width:20%;
+    span{
+        font-weight: weight(bold);
+        color:$secondary-color
+    }
+}
+
+.ourprojectcontainer{
+    margin: 50px 0px 25px 0;
+}

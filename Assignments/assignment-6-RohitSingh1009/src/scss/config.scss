@@ -1,0 +1,16 @@
+$Primary-color: #f44336;
+$Secondary-color:#fff;
+$Tertiary-color: #eee;
+$btn-backgroundcolor:#d9d9d9;
+$btn-color:#555;
+$btn-hovercolor:#bbb;
+
+@mixin element{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    transition: 0.2s;
+    width:60%;
+    margin: auto;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "assignment-4-rohitsingh1009",
+  "version": "1.0.0",
+  "description": "The goal of this assignment is to learn about CSS Selectors, properties, combinators, pseudo-classes, pseudo-elements, and box model.\r The purpose is to learn how using the above css style changes the look of the page and how they can be used in the page.\r #### Files\r 1. CleanNowCss html page,Images,Readme,gitignore,about.css,content.css,formfooter.css,header.css,svg.css,Main.css.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass scss/main.scss --output dist ",
+    "compile-watch": "node-sass scss/main.scss --output dist -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2021/assignment-4-RohitSingh1009.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2021/assignment-4-RohitSingh1009/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2021/assignment-4-RohitSingh1009#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

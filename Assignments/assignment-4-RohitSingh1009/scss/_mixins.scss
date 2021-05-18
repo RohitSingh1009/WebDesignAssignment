@@ -1,0 +1,67 @@
+
+/*!Mixins can be re-used throughout your stylesheet */
+@mixin grid {
+    display: grid;
+    margin: auto;
+    text-align: center;
+}
+@mixin grid1{
+    @include grid;
+    padding: 1em; 
+}
+
+@mixin  button1 {
+    width: 150px;
+    height: 40px;
+    border-radius: 18px;
+    font-size: fontsize(medium);
+    background-color:$primary-color;
+    color:$tertiary-color;
+    border:none;
+}
+
+@mixin button2{
+  width: 150px;
+  height: 40px;
+  font-size: fontsize(small);
+  font-weight: bolder;
+  background-color:$tertiary-color;
+  border-radius: 18px;
+  color:$primary-color;
+  border:none;
+}
+
+@mixin h2caption{
+    color:$primary-color;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@mixin alternatecontainercolor{
+    background-color:$alternatepagebackground-color;
+    margin: 0px 0;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16),0 0px 0px 0 rgba(0,0,0,0.12)!important;
+}
+
+@mixin buybutton{
+    background-color:$primary-color;
+    border: none;
+    color:$tertiary-color;
+    width: 100%;
+    height:45px;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border:none;
+}
+
+@mixin  input{
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
